@@ -34,6 +34,9 @@
 .sass_cache/*
 .scssc
 
+# Bower #
+bower_components
+
 # OS generated files #
 ######################
 .DS_Store
