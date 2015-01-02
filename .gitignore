@@ -30,7 +30,8 @@
 /node_modules/*
 
 # sass cache #
-.sass_cache/
+.sass_cache
+.sass_cache/*
 
 # OS generated files #
 ######################
