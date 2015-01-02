@@ -1,0 +1,19 @@
+.footer {
+	margin-top: 6em;
+	background: lighten(#FFC98D, 12%);
+	a {
+		color: #F1701B;
+	}
+	.twitter-share-button {
+		float: right;
+		@include between-breakpoints($mobile, $tablet-horizontal) {
+			float: left;
+			margin-top: 1em;
+		}
+	}
+	&__copy {
+		a {
+			color: lighten(black, 75%);
+		}
+	}
+}
