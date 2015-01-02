@@ -1,6 +1,6 @@
 # Technology Radar
 
-A simple technology radar map (made famous by [http://www.thoughtworks.com/radar](Thoughtworks).
+A simple technology radar map (made famous by [Thoughtworks](http://www.thoughtworks.com/radar).
 
 Work in progress...
 
@@ -39,8 +39,8 @@ Edit ``blips.json`` like this. Areas: techniques, tools, frameworks, platforms. 
 
 ### Publish
 
-+ Publish to Github Pages by using the ``gh-pages`` branch
-+ Fire up a browser and go to http://yourusername.github.io!
++ Publish using [Github Pages](https://pages.github.com/) by using the ``gh-pages`` branch
++ Fire up a browser and go to http://yourusername.github.io/radar
 
 ### Demo?
 
