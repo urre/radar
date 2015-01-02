@@ -1,0 +1,25 @@
+{
+  "name": "gulpsetup",
+  "version": "0.1.0",
+  "authors": [
+    "Grand Public <hej@urre.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1"
+  },
+  "devDependencies": {
+    "fastclick": "~1.0.3",
+    "blueimp-md5": "~1.1.0",
+    "handlebars": "~2.0.0",
+    "jquery": "1.1.1",
+    "jquery-smartresize": "git@github.com:louisremi/jquery-smartresize.git"
+  }
+}

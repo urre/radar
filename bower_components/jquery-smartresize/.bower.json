@@ -1,0 +1,14 @@
+{
+  "name": "jquery-smartresize",
+  "homepage": "https://github.com/louisremi/jquery-smartresize",
+  "_release": "f1798f24c6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f1798f24c63b3857151116bf8933e7700321e2e5"
+  },
+  "_source": "git@github.com:louisremi/jquery-smartresize.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:louisremi/jquery-smartresize.git",
+  "_direct": true
+}

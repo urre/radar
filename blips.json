@@ -1,0 +1,136 @@
+{ "blips":
+    [
+        {
+            "title": "Framework to Hold",
+            "area": "frameworks",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Hold",
+            "area": "frameworks",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Assess",
+            "area": "frameworks",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Assess",
+            "area": "frameworks",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Trial",
+            "area": "frameworks",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Trial",
+            "area": "frameworks",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Framework to Adopt",
+            "area": "frameworks",
+            "status": "adopt",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Platform to Hold",
+            "area": "platforms",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Platform to Assess",
+            "area": "platforms",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Platform to Trial",
+            "area": "platforms",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Platform to Adopt",
+            "area": "platforms",
+            "status": "adopt",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Technique to Hold",
+            "area": "techniques",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Technique to Assess",
+            "area": "techniques",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Technique to Trial",
+            "area": "techniques",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Technique to Adopt",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Technique to Adopt",
+            "area": "techniques",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tool to Hold",
+            "area": "tools",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tool to Hold",
+            "area": "tools",
+            "status": "hold",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tool to Assess",
+            "area": "tools",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tool to Assess",
+            "area": "tools",
+            "status": "assess",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tools to Trial",
+            "area": "tools",
+            "status": "trial",
+            "link": "http://nodejs.org"
+        },
+        {
+            "title": "Tools to Adopt",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://nodejs.org"
+        }
+    ]
+}

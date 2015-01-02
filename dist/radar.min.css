@@ -1,0 +1,916 @@
+/*!
+ * technologyradar
+ * Techonogy Radar in html/css/js
+ * https://github.com/urre/radar
+ * @author Urban Sanden
+ * @version 1.0.0
+ * Copyright 2015. MIT licensed.
+ */
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300");
+@import url("http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.7/basscss.min.css");
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+/* line 8, ../partials/_animations.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 15, ../partials/_animations.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 20, ../partials/_animations.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*-------------------------------------------------------------------
+
+  fadeIn
+
+-------------------------------------------------------------------*/
+@-webkit-keyframes fadeIn {
+  /* line 32, ../partials/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 33, ../partials/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  /* line 37, ../partials/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 38, ../partials/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+/* line 41, ../partials/_animations.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*-------------------------------------------------------------------
+
+  fadeOut
+
+-------------------------------------------------------------------*/
+@-webkit-keyframes fadeOut {
+  /* line 53, ../partials/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 54, ../partials/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  /* line 58, ../partials/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 59, ../partials/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+/* line 62, ../partials/_animations.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/*-------------------------------------------------------------------
+
+  bounceIn
+
+-------------------------------------------------------------------*/
+@-webkit-keyframes bounceIn {
+  /* line 74, ../partials/_animations.scss */
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* line 78, ../partials/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  /* line 83, ../partials/_animations.scss */
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  /* line 87, ../partials/_animations.scss */
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  /* line 91, ../partials/_animations.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  /* line 96, ../partials/_animations.scss */
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  /* line 100, ../partials/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  /* line 74, ../partials/_animations.scss */
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  /* line 78, ../partials/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  /* line 83, ../partials/_animations.scss */
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  /* line 87, ../partials/_animations.scss */
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  /* line 91, ../partials/_animations.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  /* line 96, ../partials/_animations.scss */
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  /* line 100, ../partials/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+/* line 106, ../partials/_animations.scss */
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+
+/*-------------------------------------------------------------------
+
+  BounceOut
+
+-------------------------------------------------------------------*/
+@-webkit-keyframes bounceOut {
+  /* line 118, ../partials/_animations.scss */
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  /* line 122, ../partials/_animations.scss */
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  /* line 127, ../partials/_animations.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+@keyframes bounceOut {
+  /* line 118, ../partials/_animations.scss */
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  /* line 122, ../partials/_animations.scss */
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  /* line 127, ../partials/_animations.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+/* line 133, ../partials/_animations.scss */
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+          animation-name: bounceOut;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+
+/* line 2, ../partials/_helpers.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 11, ../partials/_helpers.scss */
+img {
+  max-width: 100%;
+  _width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+/* line 18, ../partials/_helpers.scss */
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 23, ../partials/_helpers.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 27, ../partials/_helpers.scss */
+object {
+  max-width: 100%;
+  _width: 100%;
+}
+
+/* line 32, ../partials/_helpers.scss */
+iframe {
+  max-width: 100%;
+  _width: 100%;
+}
+
+/* line 37, ../partials/_helpers.scss */
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 42, ../partials/_helpers.scss */
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2rem;
+}
+
+/* line 49, ../partials/_helpers.scss */
+.cf {
+  zoom: 1;
+}
+/* line 51, ../partials/_helpers.scss */
+.cf:before, .cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 57, ../partials/_helpers.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 62, ../partials/_helpers.scss */
+.lefter {
+  float: left;
+}
+
+/* line 66, ../partials/_helpers.scss */
+.righter {
+  float: right;
+}
+
+/* line 70, ../partials/_helpers.scss */
+.rightaligned {
+  text-align: right;
+}
+
+/* line 74, ../partials/_helpers.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 78, ../partials/_helpers.scss */
+.visuallyhidden {
+  visibility: hidden;
+}
+
+/**
+ * Media query device constants
+ */
+/* line 1, ../partials/_buttons.scss */
+.buttons {
+  margin: 4em 0 6em 0;
+}
+
+/* line 1, ../partials/_tooltips.scss */
+.tooltip {
+  text-align: center;
+  color: #fff;
+  background-color: #333333;
+  position: absolute;
+  z-index: 100;
+  padding: .6em 1.2em;
+  font-size: .9em;
+  margin-top: 2px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  /* line 1, ../partials/_tooltips.scss */
+  .tooltip {
+    font-size: .7em;
+  }
+}
+/* line 13, ../partials/_tooltips.scss */
+.tooltip:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333333;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -10px;
+}
+/* line 25, ../partials/_tooltips.scss */
+.tooltip.active {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: fadeIn;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-delay: 0.1s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation: fadeIn;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-delay: 0.1s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  -o-animation: fadeIn;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 0.5s;
+  -o-animation-delay: 0.1s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+/* line 95, ../partials/_helpers.scss */
+.tooltip.active else {
+  -webkit-animation-iteration-count: 1;
+}
+/* line 106, ../partials/_helpers.scss */
+.tooltip.active else {
+  -moz-animation-iteration-count: 1;
+}
+/* line 117, ../partials/_helpers.scss */
+.tooltip.active else {
+  -ms-animation-iteration-count: 1;
+}
+/* line 128, ../partials/_helpers.scss */
+.tooltip.active else {
+  -o-animation-iteration-count: 1;
+}
+/* line 139, ../partials/_helpers.scss */
+.tooltip.active else {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+/* line 28, ../partials/_tooltips.scss */
+.tooltip.inactive {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fadeOut;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: fadeOut;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-delay: 0s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation: fadeOut;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-duration: 0.2s;
+  -ms-animation-delay: 0s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  -o-animation: fadeOut;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 0.2s;
+  -o-animation-delay: 0s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  -webkit-animation: fadeOut;
+          animation: fadeOut;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+/* line 95, ../partials/_helpers.scss */
+.tooltip.inactive else {
+  -webkit-animation-iteration-count: 1;
+}
+/* line 106, ../partials/_helpers.scss */
+.tooltip.inactive else {
+  -moz-animation-iteration-count: 1;
+}
+/* line 117, ../partials/_helpers.scss */
+.tooltip.inactive else {
+  -ms-animation-iteration-count: 1;
+}
+/* line 128, ../partials/_helpers.scss */
+.tooltip.inactive else {
+  -o-animation-iteration-count: 1;
+}
+/* line 139, ../partials/_helpers.scss */
+.tooltip.inactive else {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* line 1, ../partials/_footer.scss */
+.footer {
+  margin-top: 6em;
+  background: #ffe6ca;
+}
+/* line 4, ../partials/_footer.scss */
+.footer a {
+  color: #F1701B;
+}
+/* line 7, ../partials/_footer.scss */
+.footer .twitter-share-button {
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* line 7, ../partials/_footer.scss */
+  .footer .twitter-share-button {
+    float: left;
+    margin-top: 1em;
+  }
+}
+/* line 15, ../partials/_footer.scss */
+.footer__copy a {
+  color: #bfbfbf;
+}
+
+/* line 16, ../radar.scss */
+html {
+  font-size: 140%;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* line 16, ../radar.scss */
+  html {
+    font-size: 100%;
+  }
+}
+
+/* line 23, ../radar.scss */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 27, ../radar.scss */
+h1, h2, h3, h4, h5, p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 31, ../radar.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
+
+/* line 35, ../radar.scss */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* line 41, ../radar.scss */
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 50, ../radar.scss */
+a {
+  color: #333;
+}
+
+/* line 54, ../radar.scss */
+.header {
+  position: relative;
+  border-bottom: 1px solid #d3d3d3;
+  background-image: url(../svg/bg.svg);
+  background-size: cover;
+  background-position: center center;
+  padding: 2em;
+}
+/* line 61, ../radar.scss */
+.header p {
+  font-size: .7rem;
+  color: #f2f2f2;
+  margin-top: 2em;
+}
+/* line 66, ../radar.scss */
+.header a {
+  color: white;
+}
+/* line 69, ../radar.scss */
+.header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* line 69, ../radar.scss */
+  .header h1 {
+    font-size: .9em;
+    background-image: none;
+  }
+}
+/* line 78, ../radar.scss */
+.header img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+  margin-right: .5em;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 89, ../radar.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 93, ../radar.scss */
+ul li {
+  font-size: 1em;
+}
+
+/* line 99, ../radar.scss */
+.techniques header {
+  background: #0096a4;
+  color: white;
+}
+/* line 105, ../radar.scss */
+.techniques ul li a {
+  color: #0096a4;
+}
+
+/* line 113, ../radar.scss */
+.tools header {
+  background: #7db58d;
+  color: white;
+}
+/* line 119, ../radar.scss */
+.tools ul li a {
+  color: #7db58d;
+}
+
+/* line 127, ../radar.scss */
+.platforms header {
+  background: #ec7632;
+  color: white;
+}
+/* line 133, ../radar.scss */
+.platforms ul li a {
+  color: #ec7632;
+}
+
+/* line 141, ../radar.scss */
+.frameworks header {
+  background: #a13f52;
+  color: white;
+}
+/* line 147, ../radar.scss */
+.frameworks ul li a {
+  color: #a13f52;
+}
+
+/*-------------------------------------------------------------------
+
+	Radar
+
+-------------------------------------------------------------------*/
+/* line 161, ../radar.scss */
+.radar .xline {
+  content: '';
+  width: 110%;
+  height: 1px;
+  background: rgba(140, 140, 140, 0.4);
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  z-index: 100;
+}
+/* line 171, ../radar.scss */
+.radar .yline {
+  content: '';
+  height: 110%;
+  width: 1px;
+  background: rgba(140, 140, 140, 0.4);
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  z-index: 100;
+}
+
+/* line 183, ../radar.scss */
+.radar {
+  width: 46em;
+  height: 46em;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background: #f2f2f2;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 4em;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  /* line 183, ../radar.scss */
+  .radar {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1200px) {
+  /* line 183, ../radar.scss */
+  .radar {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  /* line 203, ../radar.scss */
+  .radar h3 {
+    font-size: .8em;
+  }
+}
+/* line 208, ../radar.scss */
+.radar .techniques {
+  color: #0096a4;
+  left: -3em;
+  top: 0;
+  position: absolute;
+}
+/* line 214, ../radar.scss */
+.radar .tools {
+  color: #7db58d;
+  right: -3em;
+  top: 0;
+  position: absolute;
+}
+/* line 220, ../radar.scss */
+.radar .platforms {
+  color: #ec7632;
+  left: -3em;
+  bottom: 0;
+  position: absolute;
+}
+/* line 226, ../radar.scss */
+.radar .frameworks {
+  color: #a13f52;
+  right: -3em;
+  bottom: 0;
+  position: absolute;
+}
+
+/* line 235, ../radar.scss */
+.radar:before {
+  content: 'Hold';
+  font-size: .6em;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 249, ../radar.scss */
+.adopt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 35%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #d9d9d9;
+  z-index: 3;
+}
+/* line 261, ../radar.scss */
+.adopt:before {
+  content: 'Adopt';
+  font-size: .6em;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 275, ../radar.scss */
+.trial {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #e6e6e6;
+  z-index: 2;
+}
+/* line 287, ../radar.scss */
+.trial:before {
+  content: 'Trial';
+  font-size: .6em;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 301, ../radar.scss */
+.assess {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #ebebeb;
+}
+/* line 312, ../radar.scss */
+.assess:before {
+  content: 'Assess';
+  font-size: .6em;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/*-------------------------------------------------------------------
+
+	Blips
+
+-------------------------------------------------------------------*/
+/* line 332, ../radar.scss */
+.blip {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: #ec7632;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  /* line 332, ../radar.scss */
+  .blip {
+    width: 12px;
+    height: 12px;
+  }
+}
+/* line 347, ../radar.scss */
+.blip--techniques {
+  background: #0096a4;
+}
+/* line 350, ../radar.scss */
+.blip--tools {
+  background: #7db58d;
+}
+/* line 353, ../radar.scss */
+.blip--platforms {
+  background: #ec7632;
+}
+/* line 356, ../radar.scss */
+.blip--frameworks {
+  background: #a13f52;
+}

@@ -1,0 +1,166 @@
+* {
+	&,
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+img {
+	max-width: 100%;
+	_width   : 100%;
+	height   :auto;
+	width    :auto\9;
+}
+
+img {
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+object {
+	max-width: 100%;
+	_width: 100%;
+}
+
+iframe {
+	max-width: 100%;
+	_width: 100%;
+}
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	&__cell {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 2rem;
+	}
+}
+
+.cf {
+	zoom:1;
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.lefter {
+	float: left;
+}
+
+.righter {
+	float: right;
+}
+
+.rightaligned {
+	text-align: right;
+}
+
+.centered {
+	text-align: center;
+}
+
+.visuallyhidden {
+	visibility: hidden;
+}
+
+@mixin letsanimate($animationtype, $duration, $delay, $count: 1) {
+
+  opacity                          :1;
+
+  -webkit-backface-visibility      : hidden;
+  -moz-backface-visibility         : hidden;
+  -ms-backface-visibility          : hidden;
+  -o-backface-visibility           : hidden;
+  backface-visibility              : hidden;
+
+  -webkit-animation                : $animationtype;
+  @if($count) {
+    -webkit-animation-iteration-count: $count;
+  } else {
+    -webkit-animation-iteration-count: 1;
+  }
+  -webkit-animation-duration       : $duration;
+  -webkit-animation-delay          : $delay;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode      : both;
+
+  -moz-animation                   : $animationtype;
+  @if($count) {
+    -moz-animation-iteration-count: $count;
+  } else {
+    -moz-animation-iteration-count: 1;
+  }
+  -moz-animation-duration          : $duration;
+  -moz-animation-delay             : $delay;
+  -moz-animation-timing-function   : ease;
+  -moz-animation-fill-mode         : both;
+
+  -ms-animation                    : $animationtype;
+  @if($count) {
+    -ms-animation-iteration-count: $count;
+  } else {
+    -ms-animation-iteration-count: 1;
+  }
+  -ms-animation-duration           : $duration;
+  -ms-animation-delay              : $delay;
+  -ms-animation-timing-function    : ease;
+  -ms-animation-fill-mode          : both;
+
+  -o-animation                     : $animationtype;
+  @if($count) {
+    -o-animation-iteration-count: $count;
+  } else {
+    -o-animation-iteration-count: 1;
+  }
+  -o-animation-duration            : $duration;
+  -o-animation-delay               : $delay;
+  -o-animation-timing-function     : ease;
+  -o-animation-fill-mode           : both;
+
+  animation                        : $animationtype;
+  @if($count) {
+    animation-iteration-count: $count;
+  } else {
+    animation-iteration-count: 1;
+  }
+  animation-duration               : $duration;
+  animation-delay                  : $delay;
+  animation-timing-function        : ease;
+  animation-fill-mode              : both;
+
+}
+
+/**
+ * Media query device constants
+ */
+$mobile           : 320px;
+$mobile-horizontal: 480px;
+$tablet           : 768px 1024px;
+$tablet-portrait  : 768px;
+$tablet-horizontal: 1024px;
+$desktop          : 1200px;
+$desktop-wide     : 1500px;
+$desktop-xl-wide  : 1800px;
+$desktop-xxl-wide : 2560px;
+
+ @mixin between-breakpoints($min, $max) {
+   @media (min-width: $min) and (max-width: $max) {
+     @content;
+   }
+ }

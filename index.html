@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Technology Radar 2015</title>
+	<meta name="description" content="A little technology radar map inspired from Thoughtworks publication Technology Radar">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="dist/radar.min.css">
+</head>
+<body>
+
+	<header class="center header mb4">
+		<h1>
+		<a href="/">Technology Radar 2015</a>
+		</h1>
+		<div id="user"></div>
+		</div>
+	</header>
+
+	<div class="radar">
+		<div class="xline"></div>
+		<div class="yline"></div>
+		<div id="blips"></div>
+		<h3 class="techniques">Techniques</h3>
+		<h3 class="tools">Tools</h3>
+		<h3 class="frameworks">Frameworks</h3>
+		<h3 class="platforms">Platforms</h3>
+		<div class="adopt"></div>
+		<div class="trial"></div>
+		<div class="assess"></div>
+		<div class="hold"></div>
+	</div>
+
+	<footer role="contentinfo" class="footer">
+		<div class="container p4">
+			<div class="clearfix">
+			  <div class="sm-col sm-col-12 lg-col-6">
+			  <p>A simple technology radar map (made famous by <a href="http://www.thoughtworks.com/radar/">Thoughtworks</a>)</p>
+			  	<p class="mt0 pt0">
+			  		<a href="" class="mr4">Make your own radar?</a>
+			  	</p>
+			  </div>
+			  <div class="sm-col sm-col-12 lg-col-6">
+			  	<a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+			  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			  </div>
+			</div>
+
+		</div>
+		<div class="footer__copy center bg-white p2">
+			<p>
+				<small><a href="http://twitter.com/urre" class="">A project by Urban Sandén</a></small>
+			</p>
+			<p>
+				<iframe src="http://ghbtns.com/github-btn.html?user=urre&repo=radar&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="74px" height="20px"></iframe>
+			</p>
+		</div>
+	</footer>
+
+	<script id="usertmpl" type="text/template">
+		{{#user}}
+			<p>{{#gravatar email size="64"}}{{/gravatar}}<a class="white" href="https://twitter.com/{{twitter}}">{{name}}</a></p>
+		{{/user}}
+	</script>
+
+	<script id="blipstmpl" type="text/template">
+		{{#blips}}
+			<a class="blip" rel="tooltip" href="{{link}}" target="_blank" data-color="{{area}}" data-status="{{status}}" title="{{title}}"></a>
+		{{/blips}}
+	</script>
+
+	<script src="dist/radar.min.js"></script>
+
+</body>
+</html>
