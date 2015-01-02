@@ -1,8 +1,10 @@
 # Technology Radar
 
-A simple technology radar map (made famous by [Thoughtworks](http://www.thoughtworks.com/radar).
+A simple technology radar map (made famous by [Thoughtworks](http://www.thoughtworks.com/radar)).
 
 Work in progress...
+
+[Demo](http://urre.github.io/radar)
 
 ## Make your own radar
 
@@ -41,7 +43,3 @@ Edit ``blips.json`` like this. Areas: techniques, tools, frameworks, platforms. 
 
 + Publish using [Github Pages](https://pages.github.com/) by using the ``gh-pages`` branch
 + Fire up a browser and go to http://yourusername.github.io/radar
-
-### Demo?
-
-[Demo](http://urre.github.io/radar)
