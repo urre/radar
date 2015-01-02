@@ -12,7 +12,7 @@ Fork/clone this repo
 
 ### Add user info
 
-This is displayed in the header showing your Gravatar and name with link to Twitter.
+Edit ``user.json``. This is displayed in the header showing your Gravatar and your name with a link to Twitter.
 
 	{ "user":
 	    [
