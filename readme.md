@@ -6,9 +6,9 @@ Work in progress...
 
 ## Make your own radar
 
-Fork this repo
+Fork/clone this repo
 
-	``git@github.com:urre/radar.git``
+	git clone git@github.com:urre/radar.git
 
 ### Add user info
 

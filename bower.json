@@ -1,8 +1,8 @@
 {
-  "name": "gulpsetup",
-  "version": "0.1.0",
+  "name": "technologyradar",
+  "version": "1.0.0",
   "authors": [
-    "Grand Public <hej@urre.me>"
+    "Urban Sanden <hej@urre.me>"
   ],
   "license": "MIT",
   "ignore": [
