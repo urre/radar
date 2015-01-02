@@ -3,15 +3,14 @@
 
 @import "partials/animations";
 @import "partials/helpers";
-@import "partials/buttons";
 @import "partials/tooltips";
 @import "partials/footer";
 
+// Area (blip) colors
 $techniques: #0096A4;
 $tools: #7DB58D;
 $platforms: #EC7632;
 $frameworks: #A13F52;
-
 
 html {
 	font-size: 140%;

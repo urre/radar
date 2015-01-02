@@ -19,11 +19,13 @@ Handlebars.registerHelper('gravatar', function(context, options) {
 
         init: function() {
 
+            // Get things started
             this.getBlips();
             this.getUser();
 
         },
 
+        // Get user info from user.json, using Handlebars
         getUser: function() {
             Radar.readUser('user.json', '#usertmpl', '#user');
         },
@@ -31,11 +33,12 @@ Handlebars.registerHelper('gravatar', function(context, options) {
         readUser: function (url, tplId, anchor) {
             $.getJSON(url, function(data) {
                 var template = $(tplId).html();
-                var stone = Handlebars.compile(template)(data);
-                $(anchor).append(stone);
+                var blip = Handlebars.compile(template)(data);
+                $(anchor).append(blip);
             });
         },
 
+        // Get blip info from blips.json, using Handlebars
         getBlips: function() {
             Radar.readBlips('blips.json', '#blipstmpl', '#blips');
         },
@@ -44,8 +47,8 @@ Handlebars.registerHelper('gravatar', function(context, options) {
 
             $.getJSON(url, function(data) {
                 var template = $(tplId).html();
-                var stone = Handlebars.compile(template)(data);
-                $(anchor).append(stone);
+                var blip = Handlebars.compile(template)(data);
+                $(anchor).append(blip);
                 Radar.positionBlips();
             });
         },
@@ -101,7 +104,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 }
 
                 // Calculate things
-                var _that = $(this);
+                var _blip = $(this);
                 var radarx = ($(".radar").height()/2);
                 var radary = ($(".radar").width()/2);
                 var step = (9*Math.PI)/blips;
@@ -112,8 +115,8 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 start += step;
 
                 // Now position the blip.
-                _that.css('left', x + 'px');
-                _that.css('top', y + 'px');
+                _blip.css('left', x + 'px');
+                _blip.css('top', y + 'px');
 
                 var newLeft;
                 var newTop;
@@ -122,11 +125,11 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 for ( var i = 0; i < quadrant_rotations; i++ ) {
                     newLeft = Math.floor(radarx + (radius * Math.cos(1.6*(0.1*i))));
                     newTop = Math.floor(radary + (radius * Math.sin(1.6*(0.1*i))));
-                    _that.css('left', newLeft + (Math.floor((Math.random() * 100) + 5)) + 'px');
-                    _that.css('top', newTop + (Math.floor((Math.random() * 50) + 5)) + 'px');
+                    _blip.css('left', newLeft + (Math.floor((Math.random() * 100) + 5)) + 'px');
+                    _blip.css('top', newTop + (Math.floor((Math.random() * 50) + 5)) + 'px');
                     if(area == 'frameworks') {
-                        _that.css('left', newLeft + (Math.floor((Math.random() * 100) + 5)) - 100 + 'px');
-                        _that.css('top', newTop + (Math.floor((Math.random() * 50) + 5)) + 10 + 'px');
+                        _blip.css('left', newLeft + (Math.floor((Math.random() * 100) + 5)) - 100 + 'px');
+                        _blip.css('top', newTop + (Math.floor((Math.random() * 50) + 5)) + 10 + 'px');
                     }
                 }
 
