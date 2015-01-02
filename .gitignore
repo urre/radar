@@ -30,7 +30,13 @@
 /node_modules/*
 
 # sass cache #
+<<<<<<< HEAD
 /.sass_cache/*
+=======
+.sass_cache/
+.sass_cache/*
+.scssc
+>>>>>>> master
 
 # OS generated files #
 ######################

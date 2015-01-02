@@ -1,8 +1,6 @@
 /**
  * Technology Radar 2015
  * Copyright (c) 2015 Urban Sanden
- * Using Browser Sync http://www.browsersync.io/, Autoprefixer, Sass, Uglify etc
- * With some inspiration from https://github.com/neoskop/patternlab-php and http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903
  */
 
 
@@ -136,7 +134,7 @@ gulp.task('scripts', function() {
     .pipe(reload({
       stream: true
     }))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
@@ -174,7 +172,7 @@ gulp.task('sass', function() {
     .on('error', function(err) {
       console.log(err.message);
     })
-    // .pipe(cssmin())
+    .pipe(cssmin())
     .pipe(rename({
       suffix: '.min'
     }))

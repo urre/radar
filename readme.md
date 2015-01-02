@@ -6,9 +6,9 @@ Work in progress...
 
 ## Make your own radar
 
-Fork this repo
+Fork/clone this repo
 
-	git clone
+	git clone git@github.com:urre/radar.git
 
 ### Add user info
 
@@ -44,4 +44,4 @@ Edit ``blips.json`` like this. Areas: techniques, tools, frameworks, platforms. 
 
 ### Demo?
 
-[Demo](http://urre.github.io)
+[Demo](http://urre.github.io/radar)

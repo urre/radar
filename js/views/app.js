@@ -115,16 +115,13 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 _that.css('left', x + 'px');
                 _that.css('top', y + 'px');
 
-                var xcenter = radarx;
-                var ycenter = radary;
-
                 var newLeft;
                 var newTop;
 
                 // Rotate to correct quadrant
                 for ( var i = 0; i < quadrant_rotations; i++ ) {
-                    newLeft = Math.floor(xcenter + (radius * Math.cos(1.6*(0.1*i))));
-                    newTop = Math.floor(ycenter + (radius * Math.sin(1.6*(0.1*i))));
+                    newLeft = Math.floor(radarx + (radius * Math.cos(1.6*(0.1*i))));
+                    newTop = Math.floor(radary + (radius * Math.sin(1.6*(0.1*i))));
                     _that.css('left', newLeft + (Math.floor((Math.random() * 100) + 5)) + 'px');
                     _that.css('top', newTop + (Math.floor((Math.random() * 50) + 5)) + 'px');
                     if(area == 'frameworks') {
