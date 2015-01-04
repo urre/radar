@@ -401,6 +401,9 @@ ul {
 	width: 16px;
 	height: 16px;
 	border: 1px solid white;
+	&:hover {
+		animation: waves .1s ease-in-out 1 forwards;
+	}
 	@include between-breakpoints($mobile, $desktop) {
 		width: 12px;
 		height: 12px;
@@ -423,4 +426,9 @@ ul {
 	&--frameworks {
 		background: $frameworks;
 	}
+}
+
+@keyframes waves {
+    0% { box-shadow: 0 0 0 1px rgba(lighten(black, 55%), .3); }
+    100% { box-shadow: 0 0 0 4px rgba(lighten(black, 55%), .3);}
 }
