@@ -2,7 +2,7 @@
 
 A simple technology radar map (made famous by [Thoughtworks](http://www.thoughtworks.com/radar)).
 
-[Demo](http://urre.github.io/radar)
+> ##[Demo](http://urre.github.io/radar)
 
 ## Make your own radar
 
