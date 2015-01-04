@@ -22,10 +22,36 @@
         bottom: -10px;
         margin-left: -10px;
     }
+    // Fade in and out
     &.active {
-        @include letsanimate(fadeIn, .5s, .1s);
+        @include letsanimate(fadeIn, .5s, 0s);
     }
     &.inactive {
         @include letsanimate(fadeOut, .2s, 0s);
+    }
+    // Color variations
+    &.techniques {
+        background-color: $techniques;
+        &:after {
+            border-top: 10px solid rgba($techniques, 1);
+        }
+    }
+    &.tools {
+        background-color: $tools;
+        &:after {
+            border-top: 10px solid rgba($tools, 1);
+        }
+    }
+    &.frameworks {
+        background-color: $frameworks;
+        &:after {
+            border-top: 10px solid rgba($frameworks, 1);
+        }
+    }
+    &.platforms {
+        background-color: $platforms;
+        &:after {
+            border-top: 10px solid rgba($platforms, 1);
+        }
     }
 }

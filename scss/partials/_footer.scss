@@ -12,8 +12,13 @@
 		}
 	}
 	&__copy {
+		color: lighten(black, 75%);
 		a {
+			transition: all 400ms ease;
 			color: lighten(black, 75%);
+			&:hover {
+				color: #F1701B;
+			}
 		}
 	}
 }

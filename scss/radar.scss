@@ -1,17 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300");
 @import url("http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.7/basscss.min.css");
 
+@import "partials/colors";
 @import "partials/animations";
 @import "partials/helpers";
-@import "partials/buttons";
 @import "partials/tooltips";
+@import "partials/switchery";
 @import "partials/footer";
-
-$techniques: #0096A4;
-$tools: #7DB58D;
-$platforms: #EC7632;
-$frameworks: #A13F52;
-
 
 html {
 	font-size: 140%;
@@ -24,15 +19,25 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
 	font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-weight: 300;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 	min-height: 100%;
 	margin: 0;
@@ -54,7 +59,6 @@ a {
 .header {
 	position: relative;
 	border-bottom: 1px solid #d3d3d3;
-	background-image: url(../svg/bg.svg);
 	background-size: cover;
 	background-position: center center;
 	padding: 2em;
@@ -86,16 +90,47 @@ a {
 	}
 }
 
+.layoutswitch {
+	background: lighten(black, 95%);
+	border-bottom: 1px solid lighten(black, 90%);
+	padding: .5em 1em;
+	text-align: center;
+	.switchery {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	label {
+		font-size: .8em;
+		color: lighten(black, 75%);
+	}
+	&.inactive {
+		display: none;
+	}
+}
+
 ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	list-style: disc;
 	li {
-		font-size: 1em;
+		font-size: .7em;
+		margin-bottom: .2em;
+		border-bottom: 1px solid lighten(black, 92%);
+		a {
+			@extend .cf;
+			span {
+				float: right;
+				font-size: .7em;
+				margin-left: 4em;
+				color: lighten(black, 55%);
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 
 .techniques {
+	z-index: 100;
 	header {
 		background: $techniques;
 		color: white;
@@ -110,6 +145,7 @@ ul {
 }
 
 .tools {
+	z-index: 100;
 	header {
 		background: $tools;
 		color: white;
@@ -124,6 +160,7 @@ ul {
 }
 
 .platforms {
+	z-index: 100;
 	header {
 		background: $platforms;
 		color: white;
@@ -138,6 +175,7 @@ ul {
 }
 
 .frameworks {
+	z-index: 100;
 	header {
 		background: $frameworks;
 		color: white;
@@ -320,6 +358,35 @@ ul {
 		margin: 0 auto;
 		display: block;
 		text-align: center;
+	}
+}
+
+.radar {
+	&.compact {
+		background: none;
+		max-width: 60%;
+		height: auto;
+		#blips,
+		.xline,
+		.yline,
+		.adopt,
+		.assess,
+		.trial {
+			display: none;
+		}
+		&:before {
+			display: none;
+		}
+		.techniques,
+		.tools,
+		.platforms,
+		.frameworks {
+			position: static;
+			top: auto;
+			left: auto;
+			right: auto;
+			width: 100%;
+		}
 	}
 }
 

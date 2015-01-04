@@ -19,7 +19,8 @@
     "fastclick": "~1.0.3",
     "blueimp-md5": "~1.1.0",
     "handlebars": "~2.0.0",
-    "jquery": "1.1.1",
-    "jquery-smartresize": "git@github.com:louisremi/jquery-smartresize.git"
+    "jquery": "1.11.1",
+    "jquery-smartresize": "git@github.com:louisremi/jquery-smartresize.git",
+    "switchery": "~0.7.0"
   }
 }

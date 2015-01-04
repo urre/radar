@@ -15,22 +15,24 @@
 </head>
 <body>
 
-	<header class="center header mb4">
-		<h1>
-		<a href="/">Technology Radar 2015</a>
-		</h1>
-		<div id="user"></div>
-		</div>
-	</header>
+	<div id="header"></div>
+
+	<div class="layoutswitch">
+		<label for="layout">List</label>
+		<input type="checkbox" name="layout" class="js-switch" checked />
+		<label for="layout" class="">Radar</label>
+	</div>
 
 	<div class="radar">
 		<div class="xline"></div>
 		<div class="yline"></div>
 		<div id="blips"></div>
-		<h3 class="techniques">Techniques</h3>
-		<h3 class="tools">Tools</h3>
-		<h3 class="frameworks">Frameworks</h3>
-		<h3 class="platforms">Platforms</h3>
+
+		<div class="techniques"><h3>Techniques</h3></div>
+		<div class="tools"><h3>Tools</h3></div>
+		<div class="frameworks"><h3>Frameworks</h3></div>
+		<div class="platforms"><h3>Platforms</h3></div>
+
 		<div class="adopt"></div>
 		<div class="trial"></div>
 		<div class="assess"></div>
@@ -43,7 +45,7 @@
 			  <div class="sm-col sm-col-12 lg-col-6">
 			  <p>A simple technology radar map (made famous by <a href="http://www.thoughtworks.com/radar/">Thoughtworks</a>)</p>
 			  	<p class="mt0 pt0">
-			  		<a href="" class="mr4">Make your own radar?</a>
+			  		<a href="https://github.com/urre/radar#make-your-own-radar" class="mr4">Make your own radar?</a>
 			  	</p>
 			  </div>
 			  <div class="sm-col sm-col-12 lg-col-6">
@@ -55,7 +57,7 @@
 		</div>
 		<div class="footer__copy center bg-white p2">
 			<p>
-				<small><a href="http://twitter.com/urre" class="">A project by Urban Sandén</a></small>
+				<small>A project by <a href="http://twitter.com/urre" class="">Urban Sandén</a></small>
 			</p>
 			<p>
 				<iframe src="http://ghbtns.com/github-btn.html?user=urre&repo=radar&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="74px" height="20px"></iframe>
@@ -65,7 +67,12 @@
 
 	<script id="usertmpl" type="text/template">
 		{{#user}}
+
+		<header class="center header" style="background-image: url({{background}}); ">
+			<h1>Technology Radar 2015</h1>
 			<p>{{#gravatar email size="64"}}{{/gravatar}}<a class="white" href="https://twitter.com/{{twitter}}">{{name}}</a></p>
+		</header>
+
 		{{/user}}
 	</script>
 

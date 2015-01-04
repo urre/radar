@@ -1,136 +1,154 @@
 { "blips":
     [
         {
-            "title": "Framework to Hold",
-            "area": "frameworks",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Hold",
-            "area": "frameworks",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Assess",
-            "area": "frameworks",
-            "status": "assess",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Assess",
-            "area": "frameworks",
-            "status": "assess",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Trial",
-            "area": "frameworks",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Trial",
-            "area": "frameworks",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Framework to Adopt",
-            "area": "frameworks",
-            "status": "adopt",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Platform to Hold",
-            "area": "platforms",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Platform to Assess",
-            "area": "platforms",
-            "status": "assess",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Platform to Trial",
-            "area": "platforms",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Platform to Adopt",
-            "area": "platforms",
-            "status": "adopt",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Technique to Hold",
-            "area": "techniques",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Technique to Assess",
-            "area": "techniques",
-            "status": "assess",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Technique to Trial",
-            "area": "techniques",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Technique to Adopt",
-            "area": "techniques",
-            "status": "adopt",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Technique to Trial",
-            "area": "techniques",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Tool to Hold",
-            "area": "tools",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Tool to Hold",
-            "area": "tools",
-            "status": "hold",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Tool to Assess",
+            "title": "Framer",
             "area": "tools",
             "status": "assess",
-            "link": "http://nodejs.org"
+            "link": "http://framerjs.com"
         },
         {
-            "title": "Tool to Assess",
-            "area": "tools",
-            "status": "assess",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Tools to Trial",
-            "area": "tools",
-            "status": "trial",
-            "link": "http://nodejs.org"
-        },
-        {
-            "title": "Tools to Adopt",
+            "title": "BrowserSync",
             "area": "tools",
             "status": "adopt",
+            "link": "http://browsersync.io"
+        },
+        {
+            "title": "Browserify",
+            "area": "tools",
+            "status": "trial",
+            "link": "http://browserify.org"
+        },
+        {
+            "title": "Mapbox",
+            "area": "tools",
+            "status": "trial",
+            "link": "http://mapbox.com"
+        },
+        {
+            "title": "Invision",
+            "area": "tools",
+            "status": "trial",
+            "link": "http://invisionapp.com"
+        },
+        {
+            "title": "Gulp",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://gulpjs.com"
+        },
+        {
+            "title": "Sketch Notebook",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://github.com/marcosvidal/Sketch-Notebook"
+        },
+        {
+            "title": "Rework",
+            "area": "frameworks",
+            "status": "hold",
+            "link": "https://github.com/reworkcss/rework"
+        },
+        {
+            "title": "React",
+            "area": "frameworks",
+            "status": "assess",
+            "link": "http://facebook.github.io/react"
+        },
+        {
+            "title": "Material Design",
+            "area": "frameworks",
+            "status": "trial",
+            "link": "http://www.google.com/design"
+        },
+        {
+            "title": "BASCSS",
+            "area": "frameworks",
+            "status": "adopt",
+            "link": "http://www.basscss.com/"
+        },
+        {
+            "title": "Susy",
+            "area": "frameworks",
+            "status": "adopt",
+            "link": "http://susy.oddbird.net"
+        },
+        {
+            "title": "Flexbox",
+            "area": "techniques",
+            "status": "trial",
+            "link": "http://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+        },
+        {
+            "title": "Styleguides",
+            "area": "techniques",
+            "status": "trial",
+            "link": "http://styleguides.io/"
+        },
+        {
+            "title": "SMIL",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://css-tricks.com/guide-svg-animations-smil/"
+        },
+        {
+            "title": "BEM",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://bem.info"
+        },
+        {
+            "title": "CSS Architectural Principles",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://cssguidelin.es/#architectural-principles"
+        },
+        {
+            "title": "Responsive Deliverables",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://daverupert.com/2013/04/responsive-deliverables/"
+        },
+        {
+            "title": "Responsive images",
+            "area": "techniques",
+            "status": "adopt",
+            "link": "http://alistapart.com/article/responsive-images-in-practice"
+        },
+        {
+            "title": "Node",
+            "area": "platforms",
+            "status": "trial",
             "link": "http://nodejs.org"
+        },
+        {
+            "title": "Digital Ocean",
+            "area": "platforms",
+            "status": "adopt",
+            "link": "http://digitalocean.com"
+        },
+        {
+            "title": "SassDoc",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://sassdoc.com/"
+        },
+        {
+            "title": "KSS",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://warpspire.com/kss/"
+        },
+        {
+            "title": "Finch",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://meetfinch.com/"
+        },
+        {
+            "title": "Harp",
+            "area": "tools",
+            "status": "trial",
+            "link": "http://harpjs.com/"
         }
     ]
 }
