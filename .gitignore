@@ -25,18 +25,8 @@
 *.log
 *.sql
 *.sqlite
-
 # node modules #
 /node_modules/*
-
-# sass cache #
-<<<<<<< HEAD
-/.sass_cache/*
-=======
-.sass_cache/
-.sass_cache/*
-.scssc
->>>>>>> master
 
 # OS generated files #
 ######################
@@ -47,3 +37,4 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.sass-cache

@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------
 
-    Quick and dirty code by Urban Sanden jan 2015
+    Quick and (perhaps a bit dirty) code by Urban Sanden jan 2015
 
 -------------------------------------------------------------------*/
 
@@ -23,11 +23,14 @@ Handlebars.registerHelper('gravatar', function(context, options) {
             this.getBlips();
             this.getUser();
 
+            // Layout switcher
+            this.layoutSwitcher();
+
         },
 
         // Get user info from user.json, using Handlebars
         getUser: function() {
-            Radar.readUser('user.json', '#usertmpl', '#user');
+            Radar.readUser('user.json', '#usertmpl', '#header');
         },
 
         readUser: function (url, tplId, anchor) {
@@ -50,6 +53,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 var blip = Handlebars.compile(template)(data);
                 $(anchor).append(blip);
                 Radar.positionBlips();
+                Radar.addBlipCaptions();
             });
         },
 
@@ -139,17 +143,79 @@ Handlebars.registerHelper('gravatar', function(context, options) {
 
         },
 
+        addBlipCaptions: function() {
+
+            $("[data-color]").each(function() {
+                var bliphtml;
+                var status = $(this).data('status');
+                var area = $(this).data('color');
+                var link = $(this).attr('href');
+                var title = $(this).attr('title');
+                bliphtml = '<li><a href="'+link+'">'+title+'<span>'+status+'</span></a></li>';
+                $('.'+area).append('<ul>'+bliphtml+'</ul>');
+            });
+
+            Radar.blipHovers();
+
+        },
+
+        blipHovers: function() {
+
+            var blipref;
+
+            if(!$('.radar').hasClass('compact')) {
+                $('ul a').on("mouseenter", function() {
+                    var bliptitle = $(this).contents().filter(function() {
+                        return this.nodeType == 3;
+                    }).text();
+                    blipref = $('.blip[title="'+bliptitle+'"]');
+                    $('.tooltip').remove();
+                    blipref.trigger("mouseenter");
+                }).on("mouseleave", function() {
+                    blipref.trigger("mouseout");
+                });
+            }
+
+        },
+
+        layoutSwitcher: function() {
+
+            // Init, color and size
+            var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, { size: 'small', color: '#FE8634' });
+
+            elem.onchange = function() {
+              $('.radar').toggleClass('compact');
+            };
+        },
+
+        radarStyle: function() {
+
+            // Dont show radar on small screens
+            if($(window).width() > 1200) {
+                Radar.positionBlips();
+                $('.radar').removeClass('compact');
+                $('.layoutswitch').removeClass('inactive');
+            } else {
+               $('.radar').addClass('compact');
+               $('.layoutswitch').addClass('inactive');
+            }
+
+        },
+
         tooltips: function() {
-            var targets = $( '[rel~=tooltip]' ),
-                target  = false,
-                tooltip = false,
-                title   = false,
-                tip;
+            var targets = $( '[rel~=tooltip]' );
+            var target  = false;
+            var tooltip = false;
+            var title   = false;
+            var tip;
+            var color;
 
             targets.bind( 'mouseenter', function() {
                 target  = $( this );
                 tip     = target.attr( 'title' );
-                tooltip = $( '<div class="tooltip"></div>' );
+                color     = target.data( 'color' );
+                tooltip = $('<div class="tooltip '+color+'"></div>');
 
                 if( !tip || tip == '' ) {
                     return false;
@@ -175,8 +241,10 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 };
 
                 init_tooltip();
+
                 $(window).on("debouncedresize", function( event ) {
                     init_tooltip();
+                    $('.tooltip').remove();
                 });
 
                 var remove_tooltip = function() {
@@ -198,10 +266,11 @@ Handlebars.registerHelper('gravatar', function(context, options) {
 
     $(function() {
         Radar.init();
+        Radar.radarStyle();
     });
 
     $(window).on("debouncedresize", function( event ) {
-        Radar.positionBlips();
+        Radar.radarStyle();
     });
 
 }());

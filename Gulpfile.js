@@ -123,6 +123,7 @@ gulp.task('scripts', function() {
       basePaths.bowerjs.base + 'jquery/dist/jquery.js',
       basePaths.bowerjs.base + 'jquery-smartresize/jquery.debouncedresize.js',
       basePaths.bowerjs.base + '/jquery-smartresize/jquery.throttledresize.js',
+      basePaths.bowerjs.base + 'switchery/dist/switchery.js',
       basePaths.bowerjs.base + 'fastclick/lib/fastclick.js',
       basePaths.bowerjs.base + 'blueimp-md5/js/md5.js',
       basePaths.bowerjs.base + 'handlebars/handlebars.js',
