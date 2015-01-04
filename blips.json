@@ -149,6 +149,12 @@
             "area": "tools",
             "status": "trial",
             "link": "http://harpjs.com/"
+        },
+        {
+            "title": "Vagrant",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://vagrantup.com/"
         }
     ]
 }
