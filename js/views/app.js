@@ -151,7 +151,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 var area = $(this).data('color');
                 var link = $(this).attr('href');
                 var title = $(this).attr('title');
-                bliphtml = '<li><a href="'+link+'">'+title+'<span>'+status+'</span></a></li>';
+                bliphtml = '<li><a target="_blank" href="'+link+'">'+title+'<span>'+status+'</span></a></li>';
                 $('.'+area).append('<ul>'+bliphtml+'</ul>');
             });
 
