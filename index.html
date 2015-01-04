@@ -18,8 +18,6 @@
 </head>
 <body>
 
-	<div id="header"></div>
-
 	<div class="layoutswitch">
 		<label for="layout">List</label>
 		<input type="checkbox" name="layout" class="js-switch" checked />
@@ -71,7 +69,7 @@
 	<script id="usertmpl" type="text/template">
 		{{#user}}
 
-		<header class="center header" style="background-image: url({{background}}); ">
+		<header role="banner" class="center header" style="background-image: url({{background}}); ">
 			<h1>Technology Radar 2015</h1>
 			<p>{{#gravatar email size="64"}}{{/gravatar}}<a class="white" href="https://twitter.com/{{twitter}}">{{name}}</a></p>
 		</header>

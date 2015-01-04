@@ -39,8 +39,8 @@ Handlebars.registerHelper('gravatar', function(context, options) {
         readUser: function (url, tplId, anchor) {
             $.getJSON(url, function(data) {
                 var template = $(tplId).html();
-                var blip = Handlebars.compile(template)(data);
-                $(anchor).append(blip);
+                var user = Handlebars.compile(template)(data);
+                $('body').prepend(user);
             });
         },
 
