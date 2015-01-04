@@ -20,7 +20,7 @@
         },
         {
             "title": "Mapbox",
-            "area": "tools",
+            "area": "platforms",
             "status": "trial",
             "link": "http://mapbox.com"
         },
@@ -155,6 +155,12 @@
             "area": "tools",
             "status": "adopt",
             "link": "http://vagrantup.com/"
+        },
+        {
+            "title": "AngularJS",
+            "area": "frameworks",
+            "status": "trial",
+            "link": "http://angularjs.com/"
         }
     ]
 }
