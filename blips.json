@@ -55,12 +55,6 @@
             "link": "http://facebook.github.io/react"
         },
         {
-            "title": "Material Design",
-            "area": "frameworks",
-            "status": "trial",
-            "link": "http://www.google.com/design"
-        },
-        {
             "title": "BASCSS",
             "area": "tools",
             "status": "adopt",
