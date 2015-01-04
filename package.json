@@ -19,6 +19,7 @@
     "browser-sync": "~1.8.2",
     "gulp-header": "~1.1.1",
     "imagemin-pngcrush": "~1.0.0",
-    "gulp-autoprefixer": "~1.0.1"
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-size": "~1.2.0"
   }
 }

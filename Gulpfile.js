@@ -26,6 +26,7 @@ var
   browserSync = require('browser-sync'),
   prefix      = require('gulp-autoprefixer'),
   pngcrush    = require('imagemin-pngcrush'),
+  size        = require('gulp-size'),
   reload      = browserSync.reload;
 
 /*-------------------------------------------------------------------
@@ -142,6 +143,7 @@ gulp.task('scripts', function() {
     .pipe(header(banner, {
       package: package
     }))
+    .pipe(size())
     .pipe(gulp.dest(
       basePaths.scripts.dist
     ))
@@ -181,6 +183,7 @@ gulp.task('sass', function() {
     .pipe(header(banner, {
       package: package
     }))
+    .pipe(size())
     .pipe(gulp.dest(
       basePaths.scss.dist
     ))

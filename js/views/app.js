@@ -2,7 +2,7 @@
 /*-------------------------------------------------------------------
 
 
-    Quick and (perhaps a bit dirty) code by Urban Sanden jan 2015
+    Quick and a dirty code by Urban Sanden jan 2015
     MIT
 
 
