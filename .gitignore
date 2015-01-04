@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -19,24 +18,19 @@
 *.rar
 *.tar
 *.zip
-
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
-
 # node modules #
 /node_modules/*
-
 # sass cache #
 .sass_cache/
 .sass_cache/*
 .scssc
-
 # Bower #
 bower_components
-
 # OS generated files #
 ######################
 .DS_Store
@@ -46,3 +40,4 @@ bower_components
 .Trashes
 ehthumbs.db
 Thumbs.db
+.sass-cache
