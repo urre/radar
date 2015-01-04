@@ -7,7 +7,7 @@
 
 -------------------------------------------------------------------*/
 
-// Handlebars helper for gravatar images. Requires the md5-plugin
+// Handlebars helper for displaying gravatar images. Requires the md5-plugin
 Handlebars.registerHelper('gravatar', function(context, options) {
     var email = context;
     var size = ( typeof(options.hash.size) === "undefined") ? 32 : options.hash.size;
@@ -26,7 +26,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
             this.getBlips();
             this.getUser();
 
-            // Layout switcher
+            // Layout switcher radar/list
             this.layoutSwitcher();
 
         },
@@ -55,6 +55,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 var template = $(tplId).html();
                 var blip = Handlebars.compile(template)(data);
                 $(anchor).append(blip);
+
                 Radar.positionBlips();
                 Radar.addBlipCaptions();
             });
