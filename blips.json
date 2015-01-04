@@ -161,6 +161,12 @@
             "area": "frameworks",
             "status": "trial",
             "link": "http://angularjs.com/"
+        },
+        {
+            "title": "Inline SVG",
+            "area": "techniques",
+            "status": "trial",
+            "link": "http://viget.com/extend/getting-started-with-inline-svg"
         }
     ]
 }
