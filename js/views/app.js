@@ -201,7 +201,6 @@ Handlebars.registerHelper('gravatar', function(context, options) {
                 $('.radar').removeClass('compact');
                 $('.layoutswitch').removeClass('inactive');
             } else {
-                $('.switchery').click();
                $('.radar').addClass('compact');
                $('.layoutswitch').addClass('inactive');
             }
