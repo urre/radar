@@ -1,9 +1,10 @@
 {
   "name": "technologyradar",
-  "version": "1.0.0",
-  "authors": [
+  "version": "1.1.0",
+  "author": [
     "Urban Sanden <hej@urre.me>"
   ],
+  "description": "A simple technology radar map",
   "license": "MIT",
   "ignore": [
     "**/.*",
