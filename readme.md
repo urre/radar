@@ -54,3 +54,6 @@ Or simply just host it on your own server.
 
 #### 1.0.0
 + First version published
+
+License
+Copyright (c) 2014 Urban Sanden. Licensed under the MIT license.
