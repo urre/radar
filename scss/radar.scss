@@ -69,6 +69,11 @@ a {
 	}
 	a {
 		color: white;
+		transition: all 400ms ease;
+		&:hover {
+			text-decoration: none;
+			color: lighten($profile, 40%);
+		}
 	}
 	h1 {
 		margin: 0;
@@ -111,9 +116,12 @@ a {
 ul {
 	margin: 0;
 	padding: 0;
-	list-style: disc;
+	list-style: none;
 	li {
 		font-size: .7em;
+		@include between-breakpoints($mobile, $mobile-horizontal) {
+			font-size: .8em;
+		}
 		margin-bottom: .2em;
 		border-bottom: 1px solid lighten(black, 92%);
 		a {

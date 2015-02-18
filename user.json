@@ -3,8 +3,8 @@
         {
             "name": "Urban Sandén",
             "email": "hej@urre.me",
-            "twitter": "urre",
-            "background": "./svg/bg.svg"
+            "website": "http://urre.me",
+            "background": "../images/tiles.svg"
         }
     ]
 }

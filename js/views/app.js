@@ -186,7 +186,7 @@ Handlebars.registerHelper('gravatar', function(context, options) {
 
             // Init, color and size
             var elem = document.querySelector('.js-switch');
-            var switchery = new Switchery(elem, { size: 'small', color: '#FE8634' });
+            var switchery = new Switchery(elem, { size: 'small', color: '#00cc99' });
 
             elem.onchange = function() {
               $('.radar').toggleClass('compact');

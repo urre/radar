@@ -1,8 +1,14 @@
 .footer {
 	margin-top: 6em;
-	background: lighten(#FFC98D, 12%);
+	background: lighten($footer, 12%);
+	color: lighten($profile, 60%);
 	a {
-		color: #F1701B;
+		color: lighten($profile, 40%);
+		transition: all 400ms ease;
+		&:hover {
+			text-decoration: none;
+			color: white;
+		}
 	}
 	.twitter-share-button {
 		float: right;
@@ -17,7 +23,8 @@
 			transition: all 400ms ease;
 			color: lighten(black, 75%);
 			&:hover {
-				color: #F1701B;
+				color: $profile_dark;
+				text-decoration: none;
 			}
 		}
 	}
