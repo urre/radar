@@ -4,7 +4,7 @@
             "name": "Urban Sandén",
             "email": "hej@urre.me",
             "website": "http://urre.me",
-            "background": "../images/tiles.svg"
+            "background": "http://urre.github.io/radar/images/tiles.svg"
         }
     ]
 }
