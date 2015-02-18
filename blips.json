@@ -43,15 +43,9 @@
             "link": "https://github.com/marcosvidal/Sketch-Notebook"
         },
         {
-            "title": "Rework",
-            "area": "frameworks",
-            "status": "hold",
-            "link": "https://github.com/reworkcss/rework"
-        },
-        {
             "title": "React",
             "area": "frameworks",
-            "status": "assess",
+            "status": "trial",
             "link": "http://facebook.github.io/react"
         },
         {
@@ -61,10 +55,10 @@
             "link": "http://www.basscss.com/"
         },
         {
-            "title": "Susy",
+            "title": "Ember.js",
             "area": "frameworks",
             "status": "adopt",
-            "link": "http://susy.oddbird.net"
+            "link": "http://emberjs.com"
         },
         {
             "title": "Flexbox",
@@ -111,7 +105,7 @@
         {
             "title": "Node",
             "area": "platforms",
-            "status": "trial",
+            "status": "adopt",
             "link": "http://nodejs.org"
         },
         {
@@ -125,6 +119,12 @@
             "area": "tools",
             "status": "adopt",
             "link": "http://sassdoc.com/"
+        },
+        {
+            "title": "MkDocs",
+            "area": "tools",
+            "status": "adopt",
+            "link": "http://mkdocs.org"
         },
         {
             "title": "KSS",
