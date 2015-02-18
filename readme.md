@@ -19,8 +19,8 @@ Edit ``user.json``. This is displayed in the header showing your Gravatar and yo
 	        {
 	            "name": "Urban Sandén",
 	            "email": "hej@urre.me",
-	            "twitter": "urre",
-	            "background": "./svg/bg.svg"
+	            "website": "http://urre.me",
+	            "background": "https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?fit=crop&fm=jpg&h=700&q=75"
 	        }
 	    ]
 	}
@@ -46,6 +46,10 @@ Edit ``blips.json`` like this. Areas: techniques, tools, frameworks, platforms. 
 Or simply just host it on your own server.
 
 ### Changelog
+
+#### 1.1.1
++ New color scheme, new default background svg image
++ Use user website instead of Twitter profile url
 
 #### 1.1.0
 + Added possiblity to add custom header image
