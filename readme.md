@@ -47,7 +47,7 @@ Or simply just host it on your own server.
 
 ### Changelog
 
-#### 1.1.1
+#### 1.2.0
 + New color scheme, new default background svg image
 + Use user website instead of Twitter profile url
 

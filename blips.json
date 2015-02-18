@@ -27,7 +27,7 @@
         {
             "title": "Invision",
             "area": "tools",
-            "status": "trial",
+            "status": "adopt",
             "link": "http://invisionapp.com"
         },
         {
@@ -63,19 +63,19 @@
         {
             "title": "Flexbox",
             "area": "techniques",
-            "status": "trial",
+            "status": "adopt",
             "link": "http://css-tricks.com/snippets/css/a-guide-to-flexbox/"
         },
         {
             "title": "Styleguides",
             "area": "techniques",
-            "status": "trial",
+            "status": "adopt",
             "link": "http://styleguides.io/"
         },
         {
             "title": "SMIL",
             "area": "techniques",
-            "status": "adopt",
+            "status": "trial",
             "link": "http://css-tricks.com/guide-svg-animations-smil/"
         },
         {
