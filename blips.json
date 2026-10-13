@@ -1,166 +1,184 @@
 { "blips":
     [
         {
-            "title": "Framer",
-            "area": "tools",
-            "status": "assess",
-            "link": "http://framerjs.com"
-        },
-        {
-            "title": "BrowserSync",
+            "title": "Figma",
             "area": "tools",
             "status": "adopt",
-            "link": "http://browsersync.io"
+            "link": "https://www.figma.com"
         },
         {
-            "title": "Browserify",
+            "title": "Vite",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://vite.dev"
+        },
+        {
+            "title": "esbuild",
             "area": "tools",
             "status": "trial",
-            "link": "http://browserify.org"
+            "link": "https://esbuild.github.io"
         },
         {
-            "title": "Mapbox",
+            "title": "MapLibre",
             "area": "platforms",
             "status": "trial",
-            "link": "http://mapbox.com"
+            "link": "https://maplibre.org"
         },
         {
-            "title": "Invision",
+            "title": "pnpm",
             "area": "tools",
             "status": "adopt",
-            "link": "http://invisionapp.com"
+            "link": "https://pnpm.io"
         },
         {
-            "title": "Gulp",
+            "title": "Excalidraw",
             "area": "tools",
             "status": "adopt",
-            "link": "http://gulpjs.com"
-        },
-        {
-            "title": "Sketch Notebook",
-            "area": "tools",
-            "status": "adopt",
-            "link": "https://github.com/marcosvidal/Sketch-Notebook"
+            "link": "https://excalidraw.com"
         },
         {
             "title": "React",
             "area": "frameworks",
-            "status": "trial",
-            "link": "http://facebook.github.io/react"
-        },
-        {
-            "title": "BASSCSS",
-            "area": "tools",
             "status": "adopt",
-            "link": "http://www.basscss.com/"
+            "link": "https://react.dev"
         },
         {
-            "title": "Ember.js",
+            "title": "Tailwind CSS",
+            "area": "tools",
+            "status": "trial",
+            "link": "https://tailwindcss.com"
+        },
+        {
+            "title": "Svelte",
             "area": "frameworks",
-            "status": "adopt",
-            "link": "http://emberjs.com"
+            "status": "trial",
+            "link": "https://svelte.dev"
         },
         {
-            "title": "Flexbox",
+            "title": "Container queries",
             "area": "techniques",
             "status": "adopt",
-            "link": "http://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
         },
         {
-            "title": "Styleguides",
+            "title": "Design tokens",
             "area": "techniques",
             "status": "adopt",
-            "link": "http://styleguides.io/"
+            "link": "https://www.designtokens.org"
         },
         {
-            "title": "SMIL",
+            "title": "View Transitions",
             "area": "techniques",
             "status": "trial",
-            "link": "http://css-tricks.com/guide-svg-animations-smil/"
+            "link": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
         },
         {
-            "title": "BEM",
+            "title": "Cascade layers",
+            "area": "techniques",
+            "status": "trial",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+        },
+        {
+            "title": "CSS nesting",
             "area": "techniques",
             "status": "adopt",
-            "link": "http://bem.info"
+            "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting"
         },
         {
-            "title": "CSS Architectural Principles",
+            "title": "Component-driven development",
             "area": "techniques",
             "status": "adopt",
-            "link": "http://cssguidelin.es/#architectural-principles"
+            "link": "https://www.componentdriven.org"
         },
         {
-            "title": "Responsive Deliverables",
+            "title": "AVIF images",
             "area": "techniques",
             "status": "adopt",
-            "link": "http://daverupert.com/2013/04/responsive-deliverables/"
+            "link": "https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types#avif_image"
         },
         {
-            "title": "Responsive images",
+            "title": "Web Components",
             "area": "techniques",
-            "status": "adopt",
-            "link": "http://alistapart.com/article/responsive-images-in-practice"
+            "status": "assess",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
         },
         {
-            "title": "Node",
+            "title": "Runtime CSS-in-JS",
+            "area": "techniques",
+            "status": "hold",
+            "link": "https://css-tricks.com/a-thorough-analysis-of-css-in-js/"
+        },
+        {
+            "title": "Node.js",
             "area": "platforms",
             "status": "adopt",
-            "link": "http://nodejs.org"
+            "link": "https://nodejs.org"
         },
         {
-            "title": "Digital Ocean",
+            "title": "Cloudflare Workers",
             "area": "platforms",
-            "status": "adopt",
-            "link": "http://digitalocean.com"
+            "status": "trial",
+            "link": "https://workers.cloudflare.com"
         },
         {
-            "title": "SassDoc",
-            "area": "tools",
-            "status": "adopt",
-            "link": "http://sassdoc.com/"
+            "title": "Deno",
+            "area": "platforms",
+            "status": "assess",
+            "link": "https://deno.com"
         },
         {
-            "title": "MkDocs",
-            "area": "tools",
-            "status": "adopt",
-            "link": "http://mkdocs.org"
-        },
-        {
-            "title": "KSS",
-            "area": "tools",
-            "status": "adopt",
-            "link": "http://warpspire.com/kss/"
-        },
-        {
-            "title": "Finch",
-            "area": "tools",
-            "status": "adopt",
-            "link": "https://meetfinch.com/"
-        },
-        {
-            "title": "Harp",
+            "title": "Biome",
             "area": "tools",
             "status": "trial",
-            "link": "http://harpjs.com/"
+            "link": "https://biomejs.dev"
         },
         {
-            "title": "Vagrant",
+            "title": "Starlight",
+            "area": "tools",
+            "status": "trial",
+            "link": "https://starlight.astro.build"
+        },
+        {
+            "title": "Storybook",
             "area": "tools",
             "status": "adopt",
-            "link": "http://vagrantup.com/"
+            "link": "https://storybook.js.org"
+        },
+        {
+            "title": "Claude Code",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://claude.com/claude-code"
+        },
+        {
+            "title": "Eleventy",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://www.11ty.dev"
+        },
+        {
+            "title": "Dev Containers",
+            "area": "tools",
+            "status": "adopt",
+            "link": "https://containers.dev"
+        },
+        {
+            "title": "Webpack",
+            "area": "tools",
+            "status": "hold",
+            "link": "https://webpack.js.org"
+        },
+        {
+            "title": "Astro",
+            "area": "frameworks",
+            "status": "trial",
+            "link": "https://astro.build"
         },
         {
             "title": "AngularJS",
             "area": "frameworks",
-            "status": "trial",
-            "link": "http://angularjs.com/"
-        },
-        {
-            "title": "Inline SVG",
-            "area": "techniques",
-            "status": "trial",
-            "link": "http://viget.com/extend/getting-started-with-inline-svg"
+            "status": "hold",
+            "link": "https://angularjs.org"
         }
     ]
 }
